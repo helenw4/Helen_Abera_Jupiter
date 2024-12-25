@@ -49,3 +49,33 @@ li{
 #Connect{
     margin-bottom: 50px;
 }
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    font-size: 40px;
+    color: black;
+}
+
+
+
+#experience {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+#experience .job {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+   
+} 
+
+#Connect {
+    display: flex;
+    flex-direction: column;
+}
