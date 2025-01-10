@@ -5,12 +5,232 @@
 }
 
 body{
+    height: 100vh; /* to take up entire page */
     background-color: aqua;
     margin-left: 35px;
     font-family: sans-serif, Arial, Helvetica;
     color: rgb(243, 6, 203);
+    margin-left: auto;
 }
 
+section, #name-container{
+    margin-left: 1em;
+}
+
+
+#about-pic{
+    margin: 1em;
+    width: 16rem;
+    border: 5px solid white;
+    border-radius: 7rem;
+}
+
+#About, #Experience, #Skills, #Projects, #Connect{
+    margin: 2rem;
+    font-size: 1.25rem;
+}
+
+#nav-bar{
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    background-color: pink;
+    padding: 1rem 0; 
+}
+
+#nav-bar ul{
+    display: flex;
+    flex-direction: row; 
+    width: 80%; 
+    justify-content: space-evenly;
+    list-style: none;
+  
+}
+
+#nav-bar a:hover {
+    color: red;
+    font-size: 2rem;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    margin: 4rem 0;
+    font-size: 5rem;
+}
+
+h1:hover{
+    
+}
+
+#experience {
+    margin: 2rem 1rem;
+}
+
+.job-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem; /* Space between grid items */
+    padding: 1rem;
+}
+
+.job-item {
+    background-color: #56da47;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    display: grid;
+    grid-template-rows: auto auto 1fr; /* Date, job heading, description */
+    gap: 1rem;
+}
+
+.date {
+    font-weight: bold;
+    color: #0216f1;
+}
+
+.job-experience-heading {
+    font-size: 1.25rem;
+    color: rgb(243, 6, 203);
+}
+
+.job-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    padding-top: 1rem;
+}
+
+.job-exp-photo {
+    margin-top: 1rem;
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(6, 10, 227, 0.1);
+}
+
+
+.job-exp-photo-uw{
+    margin-top: 1rem;
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(126, 4, 227, 0.1);
+}
+
+.connect-container ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 2rem;
+    padding-top: 1.25rem;
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+/* Mobile First */
+
+@media screen and (max-width: 480px){
+    body{
+        background-color: yellow;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #nav-bar{
+        display: flex;
+        justify-content: space-around;
+        width: 100%; 
+        background-color: rgb(222, 161, 7);
+        margin: 0 auto;  /* auto centers margin left and right */ 
+    }
+    h1{
+        font-size: 3rem;
+        font-style: oblique;
+        color: blue; 
+        text-align: center;
+        margin: 2rem auto; /*  helps to center for mobile */
+        text-decoration: none;
+    }
+    .about-container {
+        display: flex; 
+        flex-direction: column; /* up and down*/
+        align-items: center; 
+        text-align: center;
+    }
+    .about-container  p{
+        text-align: center;
+        margin: 1rem auto; 
+    }
+    .date{
+        color: red;
+    }
+    .job-item{
+        background-color: rgb(255, 170, 0);
+        margin: 0 auto; 
+    }
+    h2{
+        color: rgb(0, 8, 255);
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 769px){
+    body{
+        background-color: rgb(93, 197, 204);
+    }
+    h1{
+        color: red;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    h1:hover{
+        font-size: 3rem;
+    }
+   
+}
+
+@media screen and (min-width: 770px){
+    body{
+        background-color: yellow;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 h1{
     text-align: center;
     margin-top: 25px;
@@ -23,6 +243,7 @@ h1{
 
 h1:hover{
 cursor: pointer;
+color: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 255, 0)); 
 }
 
 h2{
@@ -35,11 +256,12 @@ h2{
 img{
     height: 300px;
     margin: 30px;
-    border-radius: 30px;
+    border-radius: 100px;
+    border: 5px solid white;
 }
 
 p, li{
-    margin-left: 30px; 
+    margin-left: 2rem; 
 }
 
 li{
@@ -52,6 +274,7 @@ li{
 
 .nav-links{
     display: flex;
+    margin-top: 2rem; 
     justify-content: space-around;
     padding-bottom: 50px;
     font-size: 40px;
@@ -78,4 +301,13 @@ li{
 #Connect {
     display: flex;
     flex-direction: column;
+}
+
+/* Mobile First */
+
+/* @media only screen and (max-width: 480px){
+    .nav-bar {
+        display: grid;
+        flex-direction: column;
+    }
 }

@@ -8,61 +8,86 @@
 </head>
 <body>
 
-    <h1>Helen Abera</h1>
-
     <header>
-        <nav class="nav-bar">
-          <ul class="nav-links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Connect</a></li>
+        <nav id="nav-bar">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#connect">Connect</a></li>
           </ul>
         </nav>
       </header>
 
-    <section id="skills">
-        <h2>Skills</h2>
-            <p>This section will be updated soon</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-            <ul>
-                This section to be updated soon
-            </ul>
-    </section>
+    <div id="name-container">
+        <h1>Helen Abera</h1>
+    </div>
+    
 
     <section id="About">
         <h2>About</h2>
-            <img src="headshot copy.jpeg" alt="photo of portfolio creator">
+        <div class="about-container">
+            <img src="headshot copy.jpeg" alt="photo of portfolio creator" id="about-pic">
             <p>My name is Helen and I am currently on my journey to becoming a software developer. I am excited to be learning through Code The Dream!</p>
+        </div>
     </section>
 
-    <section id="experience">
+    <section id="Experience">
         <h2>Experience</h2>
-        <div class="job">
-            <h3>Project Coordinator</h3>
-            <p><strong>Warner Bros Entertainment</strong> | July 2019 - October 2024</p>
-            <p>Worked with showrunners and producers to ensure shows followed WBD VFX guidelines and managed budgets.</p>
-            <img src="wb_photo.jpeg" alt="Warner Bros Studios Logo">
+        <div class="job-container">
+            <div class="job-item">
+                <h3 class="date">2019-2024</h3>
+                <div class="job-experience">
+                    <h3 class="job-experience-heading">Visual Effects Coordinator</h3>
+                    <p class="job-description">Worked with showrunners and producers to ensure shows followed WBD VFX guidelines and managed budgets.</p>
+                    <img src="wb_photo.jpeg" alt="Warner Bros Studios Logo" class="job-exp-photo">
+                </div>
+            </div>
+
+            <div class="job-item">
+                <h3 class="date">2015-2019</h3>
+                <div class="job-experience">
+                    <h3 class="job-experience-heading">Program Coordinator</h3>
+                    <p class="job-description">Coordinated programs and events, ensuring alignment with university policies and goals.</p>
+                    <img src="UW.jpeg" alt="University of Washington Campus" class="job-exp-photo uw">
+                </div>
+            </div>
         </div>
-        <div class="job">
-            <h3>Program Coordinator</h3>
-            <p><strong>University of Washington</strong> | November 2016 - June 2019</p>
-            <p>Coordinated programs and events, ensuring alignment with university policies and goals.</p>
-            <img src="UW.jpeg" alt="University of Washington Campus">
+
+    <section id="Skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+
+            <p>This section will be updated soon</p>
+
         </div>
     </section>
 
+    <section id="Projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+
+            <ul>
+                This section to be updated soon
+            </ul>
+
+        </div>
+    </section>
 
     <section id="Connect">
         <h2>Connect</h2>
+        <div class="connect-container">
             <ul>
-                <li><a href="Helenaberauw@gmail.com">Email</a></li>
+                <li><a href="mailto:Helenaberauw@gmail.com">Email</a></li>
                 <li><a href="https://x.com/helab1991">Twitter</a></li>
             </ul>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Helen Abera. All rights reserved.
+    </footer>
     
 </body>
 </html>
