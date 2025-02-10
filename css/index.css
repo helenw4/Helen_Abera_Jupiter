@@ -125,7 +125,7 @@ h1:hover{
     flex-direction: column;
 }
 
-.connect-container ul{
+.connect-container ul, .projects-container ul{
     display: flex;
     flex-direction: row;
     list-style: none;
