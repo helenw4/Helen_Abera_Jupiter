@@ -25,7 +25,7 @@ section, #name-container{
     border-radius: 7rem;
 }
 
-#About, #Experience, #Skills, #Projects, #Connect{
+#about, #experience, #skills, #projects, #connect{
     margin: 2rem;
     font-size: 1.25rem;
 }
@@ -318,4 +318,100 @@ li{
         display: grid;
         flex-direction: column;
     }
+}
+
+
+/* This is where the style starts for the form*/
+#leave-message {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px pink;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: blue; 
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #0f3460;
+    color: white;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: cyan;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #00adb5;
+}
+
+/* Message List Styling */
+#messages {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px cyan;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid cyan;
+}
+
+li a {
+    color: cyan;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li span {
+    margin-left: 10px;
+    color: white;
+}
+
+li button {
+    margin-left: 10px;
+    background: red;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+li button:hover {
+    background: darkred;
 }
